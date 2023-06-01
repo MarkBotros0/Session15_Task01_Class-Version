@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Recommended Movies</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css file -->
+    <link rel="stylesheet" href="./assets/Styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container mb-3">
+            <div class="row align-items-end ">
+                <h1 class="col-auto me-4">Movies</h1>
+            </div>
+            <div class="row  stats">
+                <h2 class="mb-2">Stats</h2>
+                <h3 class="mb-2 curr-page"></h3>
+                <h3 class="mb-2 number"></h3>
+                <h3 class="mb-2 top-rated"></h3>
+                <h3 class="mb-2 rating"></h3>
+            </div>
+        </div>
+    </header>
+    <div class="d-flex justify-content-center myloader">
+        <div class="loader"></div>
+    </div>
+    <main class="mb-5">
+        <div class="container">
+            <div class="d-grid my-grid">
+                <!-- Cards are rendered here -->
+            </div>
+            <div class="mt-5 text-center">
+                <button type="button" class="myBtn prevBtn me-3">Previous</button>
+                <button type="button" class="myBtn nextBtn">Next</button>
+            </div>
+        </div>
+
+        <div class="my-modal-view d-none">
+            <div class="my-modal-window d-flex">
+                <i id="close-btn" class="fa-solid fa-xmark"></i>
+                <div class="d-flex">
+
+                    <div class="img-wrapper col-md-5">
+                        <img src="" class="img-fluid h-100 movie-img" />
+                    </div>
+                    <div class="content-wrapper col-md-7">
+                        <h1 class="movie-name mt-3"></h1>
+                        <h2 class="movie-rate mt-5"></h2>
+                        <h3 class="movie-desc mt-5"></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </main>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- js file -->
+    <script src="./app.js"></script>
+</body>
+
+</html>

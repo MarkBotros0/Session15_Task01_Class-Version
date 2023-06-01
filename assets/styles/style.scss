@@ -1,0 +1,137 @@
+header {
+    h1 {
+        font-weight: 500;
+        margin: 0;
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 27px;
+        margin: 0;
+    }
+    h3{
+        font-size: 14px;
+        margin: 0; 
+    }
+
+    .stats {
+        border: solid rgb(196, 196, 196) 1px;
+        padding: 8px;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+main {
+
+    .my-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 28px;
+
+        h1 {
+            font-size: 10px;
+            color: #17a6b6;
+        }
+
+        h2 {
+            font-size: 10px;
+            color: #898989;
+            font-weight: 400;
+            line-height: 14px;
+        }
+
+        h3 {
+            font-size: 8px;
+            color: #a3a3a3;
+        }
+
+        i {
+            font-size: 8px;
+            color: #a3a3a3;
+        }
+
+        .card {
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            background-color: #d6d4d488;
+        }
+    }
+    .myBtn {
+        color: black;
+        border: black 1px solid;
+        padding: 5px 15px ;
+        font-size: 20px;
+        background-color: white;
+        border-radius: 5px;
+    }
+}
+
+.my-modal-view {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+
+    .my-modal-window {
+        width: 40%;
+        background-color: white;
+        margin: 10% auto;
+        position: relative;
+
+
+        #close-btn {
+            color: #d4d4d4;
+            padding: 5px;
+            position: absolute;
+            top: -40px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 22px;
+        }
+
+        h1 {
+            color: #000000;
+            text-transform: uppercase;
+            font-size: 35px;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: #000000;
+            font-size: 32px;
+            font-weight: 400;
+        }
+        h3{
+            font-size: 20px;
+            color: #6e6e6e;
+            font-weight: 400;
+        }
+        .content-wrapper {
+            padding: 0 20px;
+        }
+    }
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
