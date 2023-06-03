@@ -15,7 +15,7 @@ var eventsMediator = {
     },
 };
 
-class statsModule { 
+class statsModule {
     currentPage = 1
     numberOfMovies = 20
     topRatedMovie = {
@@ -124,22 +124,21 @@ class modalModule {
     }
 }
 
-
 $(document).ready(function () {
+    const stats = new statsModule()
+    const movie = new moviesModule()
+    const modal = new modalModule()
+    
     $(".nextBtn").on('click', function () {
         $(".myloader").toggleClass("d-none");
         eventsMediator.emit("next.pressed");
     })
     $(".prevBtn").on('click', function () {
-        if (moviesModule.page > 1) {
+        if (movie.page > 1) {
             $(".myloader").toggleClass("d-none");
             eventsMediator.emit("prev.pressed");
         }
     })
-
-    const stats = new statsModule()
-    const movie = new moviesModule()
-    const modal = new modalModule()
 });
 
 
